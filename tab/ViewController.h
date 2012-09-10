@@ -12,4 +12,5 @@
 @property (assign, nonatomic) IBOutlet UISegmentedControl *typeSegmentedControl;
 @property NSArray *segmentViewControllers;
 @property UIViewController *currentViewController;
+- (void)moveToAnotherViewController:(UIViewController *)vc;
 @end

@@ -47,7 +47,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Friends" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Ola-Ef-G0X">
-                                <rect key="frame" x="139" y="219" width="57" height="21"/>
+                                <rect key="frame" x="132" y="20" width="57" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -70,7 +70,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Blank View" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="8Lr-Hh-XnS">
-                                <rect key="frame" x="118" y="195" width="85" height="21"/>
+                                <rect key="frame" x="118" y="20" width="85" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -84,17 +84,55 @@
             </objects>
             <point key="canvasLocation" x="986" y="593"/>
         </scene>
-        <!--View Controller-->
+        <!--Approvals View Controller-->
         <scene sceneID="eN5-6s-neb">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="16T-eg-Ko3" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController storyboardIdentifier="approvalsViewController" id="Xqm-D1-W8F" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="approvalsViewController" id="Xqm-D1-W8F" customClass="ApprovalsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HEk-7y-b3e">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Approvals" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="ENt-xh-HJK">
-                                <rect key="frame" x="122" y="219" width="77" height="21"/>
+                                <rect key="frame" x="116" y="20" width="77" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0kX-Hz-xcO">
+                                <rect key="frame" x="51" y="49" width="206" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="swap to next screen">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="moveOver:" destination="Xqm-D1-W8F" eventType="touchUpInside" id="OkV-NQ-JEV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1949" y="-7"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="c9A-xo-Vh4">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WrN-by-Dld" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="approvalsPart2ViewController" id="93K-WQ-2A4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PxR-ow-zVU">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Approvals part 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="mCm-zG-yHv">
+                                <rect key="frame" x="97" y="20" width="126" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -105,7 +143,7 @@
                     </view>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="1949" y="-7"/>
+            <point key="canvasLocation" x="2321" y="-7"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Jml-Ks-YVy">
@@ -117,7 +155,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Requests" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="UU0-AK-iKq">
-                                <rect key="frame" x="124" y="219" width="72" height="21"/>
+                                <rect key="frame" x="124" y="20" width="72" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -170,6 +208,12 @@
         </scene>
     </scenes>
     <classes>
+        <class className="ApprovalsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ApprovalsViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="moveOver:"/>
+            </relationships>
+        </class>
         <class className="ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
             <relationships>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F04F75715FB877F00F020C5 /* ApprovalsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F04F75615FB877F00F020C5 /* ApprovalsViewController.m */; };
 		6FE5F2CA15E7288500E33191 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FE5F2C915E7288500E33191 /* UIKit.framework */; };
 		6FE5F2CC15E7288500E33191 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FE5F2CB15E7288500E33191 /* Foundation.framework */; };
 		6FE5F2CE15E7288500E33191 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FE5F2CD15E7288500E33191 /* CoreGraphics.framework */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6F04F75515FB877F00F020C5 /* ApprovalsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApprovalsViewController.h; sourceTree = "<group>"; };
+		6F04F75615FB877F00F020C5 /* ApprovalsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApprovalsViewController.m; sourceTree = "<group>"; };
 		6FE5F2C515E7288500E33191 /* ChangeViewControllerWithSegmentControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChangeViewControllerWithSegmentControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FE5F2C915E7288500E33191 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6FE5F2CB15E7288500E33191 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -83,6 +86,8 @@
 				6FE5F2DE15E7288500E33191 /* ViewController.h */,
 				6FE5F2DF15E7288500E33191 /* ViewController.m */,
 				6FE5F2D015E7288500E33191 /* Supporting Files */,
+				6F04F75515FB877F00F020C5 /* ApprovalsViewController.h */,
+				6F04F75615FB877F00F020C5 /* ApprovalsViewController.m */,
 			);
 			name = ChangeViewControllerWithSegmentControl;
 			path = tab;
@@ -165,6 +170,7 @@
 				6FE5F2D615E7288500E33191 /* main.m in Sources */,
 				6FE5F2DA15E7288500E33191 /* AppDelegate.m in Sources */,
 				6FE5F2E015E7288500E33191 /* ViewController.m in Sources */,
+				6F04F75715FB877F00F020C5 /* ApprovalsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

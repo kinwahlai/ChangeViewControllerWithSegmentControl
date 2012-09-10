@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ApprovalsViewController.h"
 
 @interface ViewController ()
 
@@ -38,10 +39,10 @@
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
-- (IBAction)segmentChanged:(UISegmentedControl *)sender {
-    UIViewController *vc = [self viewControllerForSegmentIndex:sender.selectedSegmentIndex];
+- (void)moveToAnotherViewController:(UIViewController *)vc
+{
     [self addChildViewController:vc];
-    [self transitionFromViewController:self.currentViewController toViewController:vc duration:0.5 options:UIViewAnimationOptionTransitionFlipFromLeft animations:^{
+    [self transitionFromViewController:self.currentViewController toViewController:vc duration:0.5 options:UIViewAnimationOptionTransitionNone animations:^{
         [self.currentViewController.view removeFromSuperview];
         vc.view.frame = self.view.bounds;
         [self.view addSubview:vc.view];
@@ -51,6 +52,11 @@
         self.currentViewController = vc;
     }];
     self.navigationItem.title = vc.title;
+}
+
+- (IBAction)segmentChanged:(UISegmentedControl *)sender {
+    UIViewController *vc = [self viewControllerForSegmentIndex:sender.selectedSegmentIndex];
+    [self moveToAnotherViewController:vc];
 }
 
 - (UIViewController *)viewControllerForSegmentIndex:(NSInteger)index {
